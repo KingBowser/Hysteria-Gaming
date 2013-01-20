@@ -1,1 +1,9 @@
-This file was created by IntelliJ IDEA 12.0.2 for binding GitHub repository
+Hysteria-Gaming contains definitions for a few basic game concepts, including:
+- Worlds
+- Players
+- Mobiles
+- Plugins
+- Commands
+
+--------------------------
+This project is on hold pending "completion" of Hysteria-Base
