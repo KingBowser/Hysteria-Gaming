@@ -13,12 +13,14 @@ public interface Entity extends LocationSettable, DamageSource {
 
     /**
      * Get the entity's HP count
+     *
      * @return HP
      */
     public short getLife();
 
     /**
      * Whether or not the entity is alive
+     *
      * @return alive-nes
      */
     public boolean isAlive();
@@ -30,18 +32,21 @@ public interface Entity extends LocationSettable, DamageSource {
 
     /**
      * Attack the entity from a damage source
+     *
      * @param attackedBy the damagesource dealing damage to the entity
      */
     public void attack(DamageSource attackedBy);
 
     /**
      * Get the entity's aggressiveness descriptor
+     *
      * @return aggressiveness
      */
     public Aggressiveness getEntityAggressiveness();
 
     /**
      * Get the ID of the entity
+     *
      * @return entity ID
      */
     public int getID();

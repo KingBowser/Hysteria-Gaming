@@ -30,6 +30,7 @@ public class ConnectingToServerEvent extends EventPacket {
 
     /**
      * Get the server that the event was spawned in regard to
+     *
      * @return
      */
     public Server getServerConnectingTo() {

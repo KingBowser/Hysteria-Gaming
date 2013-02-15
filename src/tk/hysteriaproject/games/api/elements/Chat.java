@@ -14,12 +14,14 @@ public interface Chat {
 
     /**
      * Add a message to the chat
+     *
      * @param message message to add
      */
     public void addMessage(Message message);
 
     /**
      * Should return a collection of all the messages in the chat
+     *
      * @return messages
      */
     public Collection<Message> getMessages();
@@ -36,12 +38,14 @@ public interface Chat {
 
         /**
          * Get the message contents
+         *
          * @return contents
          */
         public String getContents();
 
         /**
          * Get the sender of the message
+         *
          * @return message sender
          */
         public Sender getSender();
@@ -53,6 +57,7 @@ public interface Chat {
 
             /**
              * Get the name of the sender
+             *
              * @return name
              */
             public String getSenderName();

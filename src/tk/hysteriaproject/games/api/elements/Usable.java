@@ -33,7 +33,7 @@ public interface Usable {
          */
         private final EnumUseType mannerOfUse;
 
-        public UsableUsedEvent(EnumUseType manner, Object... intentAgainst){
+        public UsableUsedEvent(EnumUseType manner, Object... intentAgainst) {
             mannerOfUse = manner;
 
             vectorsUseAgainst = intentAgainst;

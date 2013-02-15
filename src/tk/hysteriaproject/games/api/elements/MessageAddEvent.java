@@ -27,9 +27,10 @@ public class MessageAddEvent {
 
     /**
      * Get the message for which the event was created
+     *
      * @return message
      */
-    public Chat.Message getMessage(){
+    public Chat.Message getMessage() {
         return messageInQuestion;
     }
 

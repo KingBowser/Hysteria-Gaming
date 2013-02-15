@@ -11,18 +11,21 @@ public interface Location {
 
     /**
      * Get the X-Location
+     *
      * @return X-Plane point
      */
     public double getXLocation();
 
     /**
      * Get the Y-Location
+     *
      * @return Y-Plane point
      */
     public double getYLocation();
 
     /**
      * Get the Z-Location
+     *
      * @return Z-Plane point
      */
     public double getZLocation();

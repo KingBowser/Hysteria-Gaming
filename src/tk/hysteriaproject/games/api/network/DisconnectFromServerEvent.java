@@ -28,6 +28,7 @@ public class DisconnectFromServerEvent extends EventPacket {
 
     /**
      * Get the server from which the front-end user wishes to disconnect
+     *
      * @return server
      */
     public Server getServerDisconnectingFrom() {

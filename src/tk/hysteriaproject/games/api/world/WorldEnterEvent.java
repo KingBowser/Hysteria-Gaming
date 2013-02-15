@@ -38,6 +38,7 @@ public class WorldEnterEvent extends EventPacket {
 
     /**
      * Get the entity in question
+     *
      * @return entity
      */
     public Entity getEntity() {
@@ -46,6 +47,7 @@ public class WorldEnterEvent extends EventPacket {
 
     /**
      * Get the world in question
+     *
      * @return world
      */
     public World getWorld() {

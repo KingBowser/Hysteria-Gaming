@@ -20,7 +20,7 @@ public class EntityCreationEvent extends EventPacket {
 
     // Constructors
 
-    public EntityCreationEvent(Entity entity){
+    public EntityCreationEvent(Entity entity) {
         entityCreating = entity;
     }
 
@@ -28,6 +28,7 @@ public class EntityCreationEvent extends EventPacket {
 
     /**
      * Get the entity for which this event exists
+     *
      * @return entity
      */
     public Entity getEntityCreating() {

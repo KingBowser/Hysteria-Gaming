@@ -13,6 +13,7 @@ public interface NamedEntity extends Entity, Chat.Message.Sender {
 
     /**
      * Get the name of the NamedEntity
+     *
      * @return entity name
      */
     public String getName();

@@ -37,6 +37,7 @@ public class EntityDeathEvent extends EventPacket {
 
     /**
      * Get the entity fow which this event was published
+     *
      * @return dead entity
      */
     public Entity getDeadEntity() {
@@ -45,6 +46,7 @@ public class EntityDeathEvent extends EventPacket {
 
     /**
      * Get the DamageSource responsible for the death of the entity in question
+     *
      * @return Killer
      */
     public DamageSource getKiller() {
