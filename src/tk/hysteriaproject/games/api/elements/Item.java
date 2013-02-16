@@ -7,27 +7,13 @@ package tk.hysteriaproject.games.api.elements;
  * Time: 5:59 PM
  * Refer to LICENSE for licensing information
  */
-public interface Item extends Usable {
+public interface Item extends Usable, ItemDescriptor {
 
     /**
-     * Get the ID of the item
+     * Get the item's damage value
      *
-     * @return item id
+     * @return damage value
      */
-    public int getID();
-
-    /**
-     * Get the name of the item
-     *
-     * @return item name
-     */
-    public String getName();
-
-    /**
-     * Get the type descriptor
-     *
-     * @return item type
-     */
-    public ItemType getType();
+    public short getDamage();
 
 }
