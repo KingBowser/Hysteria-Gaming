@@ -31,4 +31,12 @@ public interface Inventory {
      */
     public Slot getSlot(int slotID);
 
+    /**
+     * Assign a new Slot to a position in the inventory
+     *
+     * @param slotID       ID of the slot
+     * @param newSlotValue new assignment
+     */
+    public void setSlot(int slotID, Slot newSlotValue);
+
 }
