@@ -39,4 +39,13 @@ public interface Inventory {
      */
     public void setSlot(int slotID, Slot newSlotValue);
 
+    /**
+     * Move the Slot at oldSlotID to newSlotID
+     *
+     * @param oldSlotID original slot ID
+     * @param newSlotID new slot ID
+     * @throws IllegalStateException when the original slot is empty, or the new one is full
+     */
+    public void moveSlot(int oldSlotID, int newSlotID);
+
 }
