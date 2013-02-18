@@ -6,4 +6,4 @@ Hysteria-Gaming contains definitions for a few basic game concepts, including:
 - Commands
 
 --------------------------
-This project is on hold pending "completion" of Hysteria-Base
+This library requires Hysteria-Base >= 29

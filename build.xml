@@ -1,6 +1,6 @@
 <project name="Hysteria-Base">
     <description>
-        The base framework for the hysteria client, and generally any application that you should want to use it for.
+        Library used to describe the basic workings of most games.
     </description>
 
     <property name="dirs.source" location="src"/>
@@ -20,13 +20,13 @@
     </target>
 
     <target name="compile" depends="init">
+        <buildnumber file="${files.build_number}"/>
         <javac srcdir="${dirs.source}" destdir="${dirs.output}" includeantruntime="false">
             <classpath>
                 <pathelement path="${dirs.dist}"/>
                 <fileset dir="${dirs.lib}" includes="**.jar"/>
             </classpath>
         </javac>
-        <buildnumber file="${files.build_number}"/>
     </target>
 
     <target name="package" depends="compile">
