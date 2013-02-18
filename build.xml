@@ -1,0 +1,57 @@
+<project name="Hysteria-Base">
+    <description>
+        The base framework for the hysteria client, and generally any application that you should want to use it for.
+    </description>
+
+    <property name="dirs.source" location="src"/>
+    <property name="dirs.lib" location="lib"/>
+    <property name="dirs.output" location="ant_out"/>
+    <property name="dirs.dist" location="dist"/>
+    <property name="dirs.doc" location="doc"/>
+
+    <property name="proj.name">Hysteria-Gaming</property>
+
+    <property name="files.build_number" location="build.number"/>
+
+    <target name="init">
+        <mkdir dir="${dirs.dist}"/>
+        <mkdir dir="${dirs.output}"/>
+        <mkdir dir="${dirs.doc}"/>
+    </target>
+
+    <target name="compile" depends="init">
+        <javac srcdir="${dirs.source}" destdir="${dirs.output}" includeantruntime="false">
+            <classpath>
+                <pathelement path="${dirs.dist}"/>
+                <fileset dir="${dirs.lib}" includes="**.jar"/>
+            </classpath>
+        </javac>
+        <buildnumber file="${files.build_number}"/>
+    </target>
+
+    <target name="package" depends="compile">
+        <jar destfile="${dirs.dist}/${proj.name}-build_${build.number}.jar">
+            <fileset dir="${dirs.output}"/>
+            <file file="${files.build_number}"/>
+        </jar>
+    </target>
+
+    <target name="doc">
+        <property file="${files.build_number}"/>
+
+        <javadoc sourcepath="${dirs.source}" destdir="${dirs.doc}">
+        </javadoc>
+
+        <jar destfile="${dirs.dist}/${proj.name}-doc-build_${build.number}.jar">
+            <fileset dir="${dirs.doc}"/>
+        </jar>
+    </target>
+
+
+    <target name="clean">
+        <delete dir="${dirs.output}"/>
+        <delete dir="${dirs.dist}"/>
+    </target>
+
+
+</project>
