@@ -20,13 +20,16 @@
     </target>
 
     <target name="compile" depends="init">
+
         <buildnumber file="${files.build_number}"/>
+
         <javac srcdir="${dirs.source}" destdir="${dirs.output}" includeantruntime="false">
             <classpath>
                 <pathelement path="${dirs.dist}"/>
                 <fileset dir="${dirs.lib}" includes="**.jar"/>
             </classpath>
         </javac>
+
     </target>
 
     <target name="package" depends="compile">
