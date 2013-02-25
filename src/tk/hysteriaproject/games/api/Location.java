@@ -7,27 +7,27 @@ package tk.hysteriaproject.games.api;
  * Time: 11:57 AM
  * Refer to LICENSE for licensing information
  */
-public interface Location {
+public interface Location<N extends Number> {
 
     /**
      * Get the X-Location
      *
      * @return X-Plane point
      */
-    public double getXLocation();
+    public N getXLocation();
 
     /**
      * Get the Y-Location
      *
      * @return Y-Plane point
      */
-    public double getYLocation();
+    public N getYLocation();
 
     /**
      * Get the Z-Location
      *
      * @return Z-Plane point
      */
-    public double getZLocation();
+    public N getZLocation();
 
 }

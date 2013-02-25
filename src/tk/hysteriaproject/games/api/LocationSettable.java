@@ -7,27 +7,27 @@ package tk.hysteriaproject.games.api;
  * Time: 12:30 PM
  * Refer to LICENSE for licensing information
  */
-public interface LocationSettable extends Location {
+public interface LocationSettable<N extends Number> extends Location<N> {
 
     /**
      * Set the new X-Plane location
      *
      * @param newXLocation new X-Plane location
      */
-    public void setXLocation(int newXLocation);
+    public void setXLocation(N newXLocation);
 
     /**
      * Set the new Y-Plane location
      *
      * @param newYLocation new Y-Plane location
      */
-    public void setYLocation(int newYLocation);
+    public void setYLocation(N newYLocation);
 
     /**
      * Set the new Z-Plane location
      *
      * @param newZLocation new Z-Plane location
      */
-    public void setZLocation(int newZLocation);
+    public void setZLocation(N newZLocation);
 
 }
