@@ -54,6 +54,7 @@
     <target name="clean">
         <delete dir="${dirs.output}"/>
         <delete dir="${dirs.dist}"/>
+        <delete dir="${dirs.doc}"/>
     </target>
 
 
