@@ -1,6 +1,6 @@
 package pn.us.hysteria.games.api.elements;
 
-import tk.hysteriaproject.api.spec.event.EventPacket;
+import pn.us.hysteria.api.spec.event.EventPacket;
 
 /**
  * Event published on the use of an item

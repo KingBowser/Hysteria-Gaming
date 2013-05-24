@@ -1,6 +1,6 @@
 package pn.us.hysteria.games.api.elements.inventory;
 
-import tk.hysteriaproject.api.spec.event.EventPacket;
+import pn.us.hysteria.api.spec.event.EventPacket;
 
 /**
  * Event that may be published when a Slot is moved either by the engine or the player

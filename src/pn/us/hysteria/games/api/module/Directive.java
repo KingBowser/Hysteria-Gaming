@@ -1,6 +1,6 @@
 package pn.us.hysteria.games.api.module;
 
-import tk.hysteriaproject.api.spec.SuccessState;
+import pn.us.hysteria.api.spec.SuccessState;
 
 /**
  * Provides a command or flag that may be invoked

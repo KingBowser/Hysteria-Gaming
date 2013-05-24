@@ -1,6 +1,6 @@
 package pn.us.hysteria.games.api.elements.inventory;
 
-import tk.hysteriaproject.api.spec.event.EventPacket;
+import pn.us.hysteria.api.spec.event.EventPacket;
 
 /**
  * Published when a transform completes in a TransformInventory

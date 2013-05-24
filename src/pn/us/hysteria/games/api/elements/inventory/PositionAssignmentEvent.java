@@ -1,6 +1,6 @@
 package pn.us.hysteria.games.api.elements.inventory;
 
-import tk.hysteriaproject.api.spec.event.EventPacket;
+import pn.us.hysteria.api.spec.event.EventPacket;
 
 /**
  * Similar to {@code SlotIDChangeEvent}, but describes only the assignment of a new value to a slot position

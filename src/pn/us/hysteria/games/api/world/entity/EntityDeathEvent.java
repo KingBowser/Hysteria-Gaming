@@ -1,6 +1,6 @@
 package pn.us.hysteria.games.api.world.entity;
 
-import tk.hysteriaproject.api.spec.event.EventPacket;
+import pn.us.hysteria.api.spec.event.EventPacket;
 
 /**
  * Creator: KingBowser

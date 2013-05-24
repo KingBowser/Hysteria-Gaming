@@ -1,7 +1,7 @@
 package pn.us.hysteria.games.api.world;
 
+import pn.us.hysteria.api.spec.event.EventPacket;
 import pn.us.hysteria.games.api.world.entity.Entity;
-import tk.hysteriaproject.api.spec.event.EventPacket;
 
 /**
  * Published when an entity enters the world

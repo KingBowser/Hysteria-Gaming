@@ -1,6 +1,6 @@
 package pn.us.hysteria.games.api.network;
 
-import tk.hysteriaproject.api.spec.event.EventPacket;
+import pn.us.hysteria.api.spec.event.EventPacket;
 
 /**
  * Published when the client connects to a server
